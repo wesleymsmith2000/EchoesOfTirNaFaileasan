@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
+    "build:droidscript": "tsc --noEmit && vite build --base ./ --outDir droidscript/EchoesOfTirNaFaileasan/www",
     "lint": "eslint .",
     "format": "prettier --write .",
     "test": "vitest run",
