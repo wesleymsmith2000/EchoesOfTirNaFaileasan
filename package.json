@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "setup": "npm ci",
     "dev": "vite --host 127.0.0.1",
+    "dev:codespaces": "vite --host 0.0.0.0",
     "dev:phone": "vite --host 0.0.0.0",
     "build": "tsc --noEmit && vite build",
     "build:droidscript": "tsc --noEmit && vite build --base ./ --outDir droidscript/EchoesOfTirNaFaileasan/www",

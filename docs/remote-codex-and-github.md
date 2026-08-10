@@ -1,5 +1,20 @@
 # Remote Codex and GitHub Setup
 
+## Mobile-First Cloud Setup
+
+For normal development that should not depend on the laptop remaining awake, use GitHub as
+the canonical project state and GitHub Codespaces as the cloud development host.
+
+Android workflow:
+
+- Open the GitHub repository from Android.
+- Start or resume a Codespace on `main` or on a feature branch.
+- Use VS Code Web for terminal access, Codex tasks, diffs, tests, commits, and pushes.
+- Run `npm run dev:codespaces` and open the forwarded Vite port when prompted.
+
+Codespaces uses `.devcontainer/devcontainer.json`, which installs dependencies with
+`npm ci` after the container is created.
+
 ## Current Host Setup
 
 - Windows project path:

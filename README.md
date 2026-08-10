@@ -8,7 +8,7 @@ view models, and rendering. The AI Game Master is intentionally not implemented 
 ## Quick Start
 
 ```powershell
-npm.cmd install
+npm.cmd run setup
 npm.cmd run test
 npm.cmd run lint
 npm.cmd run build
@@ -21,6 +21,63 @@ machine's LAN IPv4 address, then open `http://<LAN-IP>:5173` on the phone.
 
 For an offline DroidScript copy, run `npm.cmd run build:droidscript` and copy
 `droidscript/EchoesOfTirNaFaileasan/` into DroidScript. See `docs/droidscript.md`.
+
+## Mobile And Codespaces Development
+
+GitHub is the canonical sync point for this project. The laptop is useful for local
+hardware, GPU, DroidScript, and device testing, but normal repository work can happen from
+GitHub Codespaces through VS Code Web.
+
+### Open In Codespaces
+
+1. Open the GitHub repository in a browser:
+   `https://github.com/wesleymsmith2000/EchoesOfTirNaFaileasan`.
+2. Choose **Code** -> **Codespaces** -> **Create codespace on main**, or resume an
+   existing codespace.
+3. Wait for the devcontainer setup to finish. It runs `npm ci` automatically.
+4. In the VS Code Web terminal, run:
+
+   ```bash
+   npm run dev:codespaces
+   ```
+
+5. Open the forwarded port `5173` when VS Code prompts.
+
+### Develop From Android
+
+From an Android phone or tablet, use GitHub Codespaces / VS Code Web for reviewing code,
+issuing Codex tasks, inspecting diffs, running tests, making small edits, and committing or
+pushing changes. Large manual editing is still more comfortable on a keyboard, but the
+cloud environment no longer depends on the laptop staying awake.
+
+Useful Codespaces commands:
+
+```bash
+npm run setup
+npm run dev:codespaces
+npm run test
+npm run lint
+npm run format
+npm run build
+```
+
+### Continue Locally
+
+On the laptop, sync from GitHub before continuing:
+
+```bash
+git pull
+```
+
+After local work:
+
+```bash
+git add .
+git commit -m "Describe the change"
+git push
+```
+
+The Codespace can then continue from the updated GitHub state.
 
 ## Current Scope
 
