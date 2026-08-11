@@ -5,6 +5,16 @@
 For normal development that should not depend on the laptop remaining awake, use GitHub as
 the canonical project state and GitHub Codespaces as the cloud development host.
 
+The GitHub repository for this project is:
+
+```text
+https://github.com/wesleymsmith2000/EchoesOfTirNaFaileasan.git
+```
+
+The separate web portal project may reference this repository for project tracking or
+portal-side workflows, but this repository remains the canonical remote for the Echoes RPG
+engine.
+
 Android workflow:
 
 - Open the GitHub repository from Android.

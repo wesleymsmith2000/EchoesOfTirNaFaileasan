@@ -28,6 +28,12 @@ GitHub is the canonical sync point for this project. The laptop is useful for lo
 hardware, GPU, DroidScript, and device testing, but normal repository work can happen from
 GitHub Codespaces through VS Code Web.
 
+This project's GitHub repository is:
+`https://github.com/wesleymsmith2000/EchoesOfTirNaFaileasan.git`.
+
+The separate web portal project may reference this repository, but it is not the canonical
+remote for the Echoes RPG engine.
+
 ### Open In Codespaces
 
 1. Open the GitHub repository in a browser:
@@ -103,3 +109,4 @@ and a real deployment target when a build needs remote playtesting.
 The full concept handoff lives in `Echoes_of_Tir_Na_Faileasan_PROJECT.md`.
 The AI, art, voice, and module-processing direction is summarized in
 `docs/ai-generative-content.md`.
+Remote/mobile workflow notes live in `docs/remote-codex-and-github.md`.
